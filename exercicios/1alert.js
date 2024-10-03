@@ -1,0 +1,1 @@
+alert("Agora você vai mudar a sua vida")
