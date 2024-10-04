@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritméticos e de Atribuição</title>
+</head>
+<body>
+    <h1>Operadores Aritméticos e de Atribuição</h1>
+    <p>Neste exercício, crie apenas uma variável e atribua um valor de 10 para ela, em seguida faça o passo-a-passo abaixo:</p>
+
+    <ol>
+        <li>Some 5 a essa variável</li>
+        <li>Multiplique o valor da variável por 5 e reatribua o valor</li>
+        <li>Some 1 à variável e reatribua o novo valor</li>
+        <li>Sem alterar o valor da variável, mostre na tela o resto da divisão por 6 - A mensagem deve ser: O resto da divisão de (variável) por 6 é (resultado)</li>
+        <li>Sem alterar o valor da variável, mostre na tela o resto da divisão por 6 elevado ao quadrado. A msg exibida deve ser: O quadrado do resto da divisão de (variável), por 6 é (resultado)</li>
+        <li>Mostre na tela o valor da variável</li>
+        <li>Agora divida o valor da variável por 4 e reatribua o valor</li>
+        <li>Qual o valor da variável?</li>
+    </ol>
+
+    <script>
+        let misterio = 10
+
+        misterio +=5
+
+        misterio *= 5
+
+        misterio++
+
+        alert("O resto da divisão de " + misterio + " por 6 é: " + (misterio % 6))
+
+        alert("O quadrado do resto da divisão de " + misterio + ", por 6 é " + ((misterio % 6) **2))
+
+        alert(misterio)
+        
+        misterio /= 4
+
+        alert(misterio) 
+
+    </script>
+    
+</body>
+</html>
