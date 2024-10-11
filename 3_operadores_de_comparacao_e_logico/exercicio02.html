@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operadores lógicos</h1>
+
+    <p>A proposta desse exercício é: </p>
+
+    <ul>
+        <li><strong>Aprovado:</strong> Se o aluno tiver a média acima de 6 e não tiver nota zero em nenhum bimestre ele está aprovado</li>
+        <li><strong>Recuperação:</strong> Caso algumas das notas seja igual a zero ou ele tenha a média abaixo de 6 e acima de 2, ele estará de recuperação</li>
+        <li><strong>Reprovado: </strong>Se a média for igual ou menor que 2,0, o aluno estará reprovado direto.</li>
+    </ul>
+
+    <script>
+
+        let n1 = parseFloat(prompt("Digite a primeira nota: "))
+        let n2 = parseFloat(prompt("Digite a segunda nota: "))
+        let n3 = parseFloat(prompt("Digite a terceira nota: "))
+        let n4 = parseFloat(prompt("Digite a quarta nota: "))
+
+        let media = (n1 + n2 + n3 + n4) / 4
+
+        if (media >= 6 && n1 > 0 && n2 > 0 && n3 > 0 && n4 > 0) {
+            alert("Sua média foi: " + media + " Aprovado")
+        }
+        else if (media > 2 || n1 == 0 || n2 == 0 || n3 == 0 || n4 == 0) {
+            alert("Sua média foi: " + media + " Recuperação")
+        }
+        else if(media <= 2) {
+            alert("Sua média foi: " + media + " Reprovado")
+        }
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
